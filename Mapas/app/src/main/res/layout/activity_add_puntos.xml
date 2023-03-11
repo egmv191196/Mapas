@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".practica.view.addPuntos">
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa la latitud"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etLat"/>
+    <EditText
+        android:id="@+id/etLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        app:layout_constraintTop_toBottomOf="@id/tvLat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvLon"/>
+    <TextView
+        android:id="@+id/tvLon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa la longitud"
+        app:layout_constraintTop_toBottomOf="@id/etLat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etLon"/>
+    <EditText
+        android:id="@+id/etLon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud"
+        app:layout_constraintTop_toBottomOf="@id/tvLon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvName"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el nombre"
+        app:layout_constraintTop_toBottomOf="@id/etLon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etName"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnAddDatos"/>
+    <Button
+        android:id="@+id/btnAddDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar el punto nuevo"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
